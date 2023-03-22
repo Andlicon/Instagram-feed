@@ -45,7 +45,12 @@
     }
 
     .pictureInput {
-        display: none;
+        width: 1;
+        height: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
     }
 
     .postInputElement {
@@ -64,3 +69,38 @@
 
         cursor: pointer;
     }
+
+    .pictureInputContainer {
+        position: relative;
+    }
+
+
+/* preview */
+.preview p {
+    margin-bottom: 0;
+    color: red;
+}
+
+.preview ul {
+    margin-bottom: 0;
+}
+
+.preview img {
+    width: 5em;
+    object-fit: cover;
+    object-position: center;
+}
+
+.preview ul li {
+    list-style: none;
+}
+
+.preview ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: flex-start;
+    align-items: center;
+    gap: 0.5em;
+    width: 100%;
+
+}
