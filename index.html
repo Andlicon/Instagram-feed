@@ -20,49 +20,63 @@
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <!-- brand -->
-            <a class="navbar-brand">
+            <a href="/" class="navbar-brand">
                 <i class="fa-brands fa-instagram brand-i"></i>
                 <h1 class="brand-h1">Instagram</h1>
             </a>
-
             <!-- Boton modal -->
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#newPost">
-                Create a new post
-            </button>
-            <!-- Modal -->
-            <div class="modal fade" id="newPost" tabindex="-1" aria-labelledby="newPostLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <form class="modal-content needs-validation" novalidate>
-                        <div class="modal-header">
-                            <h5 class="modal-title texto-destacar" id="newPostLabel">Create a new post</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body modal-body-post">
-                            <!-- Contenido del modal -->
-                            <div class="grupo">
-                                <label for="captionInput" class="form-label texto-destacar">Caption:</label>
-                                <textarea class="form-control" id="captionInput" aria-label="With textarea" placeholder="Add the caption of your post here"></textarea>
+            <div class="opciones">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#newPost">
+                    Create a new post
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="newPost" tabindex="-1" aria-labelledby="newPostLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <form class="modal-content needs-validation" novalidate>
+                            <div class="modal-header">
+                                <h5 class="modal-title texto-destacar" id="newPostLabel">Create a new post</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="postInput">
-                                <div class="pictureInputContainer">
-                                    <label for="pictureInput" class="postInputElement rounded">
-                                        <i class="fa-sharp fa-solid fa-camera"></i>
-                                    </label>
-                                    <input type="file" class="pictureInput" id="pictureInput" accept=".jpg, .png, .jpeg" multiple required>
+                            <div class="modal-body modal-body-post">
+                                <!-- Contenido del modal -->
+                                <div class="grupo">
+                                    <label for="captionInput" class="form-label texto-destacar">Caption:</label>
+                                    <textarea class="form-control" id="captionInput" aria-label="With textarea" placeholder="Add the caption of your post here" required></textarea>
                                 </div>
-                                <button class="postInputElement rounded">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                </button>
+                                <div class="postInput">
+                                    <div class="pictureInputContainer">
+                                        <label for="pictureInput" class="postInputElement rounded">
+                                            <i class="fa-sharp fa-solid fa-camera"></i>
+                                        </label>
+                                        <input type="file" class="pictureInput" id="pictureInput" accept=".jpg, .png, .jpeg" multiple required>
+                                    </div>
+                                    <button class="postInputElement rounded">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </button>
+                                </div>
+                                <div id="preview" class="preview">
+                                    <p>Ninguna imagen ha sido seleccionada.</p>
+                                </div>
                             </div>
-                            <div id="preview" class="preview">
-                                <p>Ninguna imagen ha sido seleccionada.</p>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-success">Publish</button>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-success">Publish</button>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
+                </div>
+                <!-- dropdown -->
+                <div class="dropdown dropdown-menu-end">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu flex-column dropdown-menu-end">
+                        <li><button class="dropdown-item" type="button">Profile</button></li>
+                        <li><button class="dropdown-item" type="button">Accesability</button></li>
+                        <li><button class="dropdown-item" type="button">Privacy and Data</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item text-danger" type="button">log out</button></li>
+                    </ul>
                 </div>
             </div>
         </div>

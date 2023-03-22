@@ -104,3 +104,8 @@
     width: 100%;
 
 }
+
+.opciones {
+    display: flex;
+    gap: 0.5em;
+}
