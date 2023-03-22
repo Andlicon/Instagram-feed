@@ -1,0 +1,66 @@
+/* generales */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.texto-destacar {
+    font-weight: bold;
+}
+
+/* nav */
+    /* brand */
+    .brand-h1 {
+        display: inline-block;
+        font-family: 'Alkatra', cursive;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .brand-i {
+        font-size: 1.5rem;
+    }
+
+    .navbar-brand {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.3em;
+    }
+
+    /* modal nav */
+    .modal-body-post {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 0.5em;
+    }
+
+    #captionInput {
+        resize: none;
+    }
+
+    .postInput {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .pictureInput {
+        display: none;
+    }
+
+    .postInputElement {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 26px;
+        height: 26px;
+
+        font-size: 1rem;
+        padding: 1rem;
+
+        background-color: lightgrey;
+        border: 0;
+
+        cursor: pointer;
+    }
