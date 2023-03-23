@@ -173,7 +173,6 @@
 }
 
 .post {
-    min-width: 5em;
     border: 1px solid grey;
 }
 
@@ -210,4 +209,13 @@ button.nav-link {
 
 .contenedor-post {
     padding: 0.4em;
+}
+
+.row>.post{
+    margin-bottom: 1em;
+}
+
+.row-cuadrada {
+    width: 45%;
+    min-width: 5em;
 }
