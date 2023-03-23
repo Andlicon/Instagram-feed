@@ -151,13 +151,59 @@
 
 /* post */
 .contenedor-post {
-    height: 24vw;
+    aspect-ratio: 1 / 1;
     padding: 0.2em;
 }
 
-.post {
+.post-imagen {
     object-fit: cover;
     object-position: center;
     width: 100%;
+}
+
+.imagen-grid {  /*Le añado height 100% porque si no en grid no sería un cuadrado perfecto*/
     height: 100%;
+}
+
+/* contenido-centrado */
+.contenido-centrado {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.post {
+    min-width: 5em;
+    border: 1px solid grey;
+}
+
+.container-fluid .nav {
+    margin-bottom: 0 !important;
+}
+
+button.nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.post-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-padding {
+    padding: 1em;
+}
+
+.post-fecha {
+    align-self: flex-start;
+}
+
+.row>* {
+    padding: 0;
+}
+
+.post-contenido>* {
+    margin: 0;
 }
