@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram feed</title>
     
-    <!-- css -->
-    <link rel="stylesheet" href="./styles.css">
     <!-- bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 <main>
@@ -84,25 +84,58 @@
     </nav>
 
     <!-- cuerpo -->
-    <div class="contenido container-fluid">
+    <div class="container-fluid">
         <!-- nav-pills -->
         <ul class="nav nav-pills mb-3 layoutCambiar" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                <button class="nav-link text-muted" id="gridLayout" data-bs-toggle="pill" data-bs-target="#pills-grid" type="button" role="tab" aria-controls="pills-home" aria-selected="false">
                     <i class="fa-solid fa-table-cells"></i>
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <button class="nav-link text-muted active" id="normalLayout" data-bs-toggle="pill" data-bs-target="#pills-normal" type="button" role="tab" aria-controls="pills-profile" aria-selected="true">
                     <i class="fa-solid fa-square"></i>
                 </button>
             </li>
         </ul>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...</div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
-        </div>
+
         <!-- contenido -->
+        <div class="tab-content container-fluid" id="pills-tabContent">
+            <div class="tab-pane" id="pills-grid" role="tabpanel" aria-labelledby="gridLayout" tabindex="0">
+                <div class="row">
+                    <div class="col-4 contenedor-post">
+                        <img class="post" src="https://img.freepik.com/foto-gratis/lindo-perrito-haciendose-pasar-persona-negocios_23-2148985938.jpg" alt="">
+                    </div>
+                    <div class="col-4 contenedor-post">
+                        <img class="post" src="https://colegiofrayluisdeleon.com.ve/wp-content/uploads/2017/04/smiling-students-with-backpacks_1098-1220.jpg" alt="">
+                    </div>
+                    <div class="col-4 contenedor-post">
+                        <img class="post" src="https://foodandtravel.mx/wp-content/uploads/2015/12/shutterstock_342932102.jpg" alt="">
+                    </div>
+                    <div class="col-4 contenedor-post">
+                        <img class="post" src="https://media.istockphoto.com/id/532958977/photo/young-african-american-woman-smiling-and-looking-up.jpg?s=612x612&w=0&k=20&c=aageGRTbSsEcCX8t52KBTOn6Lnf8lnYRF1fzsOsTS_c=" alt="">
+                    </div>
+                    <div class="col-4 contenedor-post">
+                        <img class="post" src="https://www.toureiffel.paris/themes/custom/tour_eiffel/img/picto_myGoogleBusiness_1.jpg" alt="">
+                    </div>
+                    <div class="col-4 contenedor-post">
+                        <img class="post" src="https://image-service.onefootball.com/transform?w=280&h=210&dpr=2&image=https%3A%2F%2Fimages.performgroup.com%2Fdi%2Flibrary%2FGOAL%2F2%2F92%2Fcristiano-ronaldo-juventus-real-madrid-ucl-02032018_1q50jqpoxrelw1fcfofwy9b9vs.jpg%3Ft%3D-1929409366" alt="">
+                    </div>
+                    <div class="col-4 contenedor-post">
+                        <img class="post" src="https://apicms.thestar.com.my/uploads/images/2020/05/14/681788.jpg" alt="">
+                    </div>
+                    <div class="col-4 contenedor-post">
+                        <img class="post" src="https://www.economist.com/img/b/1190/670/90/sites/default/files/images/2015/09/blogs/economist-explains/code2.png" alt="">
+                    </div>
+                    <div class="col-4 contenedor-post">
+                        <img class="post" src="https://thumbs.dreamstime.com/b/compa%C3%B1eros-de-clase-adolescentes-que-se-colocan-en-vest%C3%ADbulo-la-high-school-secundaria-99966069.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show active" id="pills-normal" role="tabpanel" aria-labelledby="normalLayout" tabindex="0">
+                Normal
+            </div>
+        </div>
 
     </div>
 </main>
