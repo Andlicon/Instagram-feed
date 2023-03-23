@@ -207,3 +207,7 @@ button.nav-link {
 .post-contenido>* {
     margin: 0;
 }
+
+.contenedor-post {
+    padding: 0.4em;
+}
